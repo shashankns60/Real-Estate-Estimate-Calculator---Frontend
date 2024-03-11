@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- . . . -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cost Calculator and Order Wizard">
+    <meta name="author" content="UWS">
+    <title>Real Estate Estimate Calculator</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.png" rel="shortcut icon">
+
+    <!-- Google Fonts - Poppins, Karla -->
+    <link href="../../fonts.googleapis.com/css6079.css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="../../fonts.googleapis.com/css69ef.css?family=Karla:300,400,500,600,700" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <!-- Custom Font Icons -->
+    <link href="vendor/icomoon/css/iconfont.min.css" rel="stylesheet">
+
+    <!-- Vendor CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/animate/css/animate.min.css" rel="stylesheet">
+    <link href="vendor/dmenu/css/menu.css" rel="stylesheet">
+    <link href="vendor/hamburgers/css/hamburgers.min.css" rel="stylesheet">
+    <link href="vendor/mmenu/css/mmenu.min.css" rel="stylesheet">
+    <link href="vendor/range-slider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="vendor/magnific-popup/css/magnific-popup.css" rel="stylesheet">
+    <link href="vendor/float-labels/css/float-labels.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<style>
+    .selected-option {
+        background-color: #c7efc7;
+        /* Light green */
+    }
+
+    #estimated-price {
+        background-color: #c7efc7;
+        /* Light green */
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .fixed-result {
+        position: sticky;
+        top: 50px;
+        /* Adjust as needed */
+        padding: 15px;
+        background-color: #f8f9fa;
+        /* Light grey */
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+</style>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Page -->
+    <div id="page">
+        <!-- Header -->
+        <header class="main-header sticky">
+            <a href="#menu" class="btn-mobile">
+                <div class="hamburger hamburger--spin" id="hamburger">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+            </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div id="logo">
+                            <h1><a href="index.html" title="Costy">Costy</a></h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-6">
+                        <ul id="menuIcons">
+                            <li><a href="#" target="_blank"><i class="icon icon-support"></i></a></li>
+                        </ul>
+                        <!-- Menu -->
+                        <nav id="menu" class="main-menu">
+                            <ul>
+                                <li><span><a href="index.html">Home</a></span></li>
+                                <li>
+                                    <span><a href="cost.html">Calculators </a></span>
+
+                                </li>
+
+                                <li><span><a href="contacts.html">Contacts</a></span></li>
+                            </ul>
+                        </nav>
+                        <!-- Menu End -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Sub Header -->
+        <div class="sub-header">
+            <div class="container">
+                <h1>Privacy Policy</h1>
+            </div>
+        </div>
+        <!-- Sub Header End -->
+
+        <main>
+            <div class="container">
+             
+                <p>This is a privacy policy for [Your Company Name], accessible from [Your Website URL].</p>
+            
+                <h2>Information We Collect</h2>
+                <p>We collect various types of information for various purposes to provide and improve our services to you. Types of information collected may include:</p>
+                <ul>
+                  <li>Name</li>
+                  <li>Email Address</li>
+                  <li>Phone Number</li>
+                  <li>Address</li>
+                  <li>Payment Information</li>
+                  <li>Usage Data</li>
+                </ul>
+            
+                <h2>How We Use Your Information</h2>
+                <p>We may use the information we collect for various purposes, including:</p>
+                <ul>
+                  <li>To provide and maintain our services</li>
+                  <li>To notify you about changes to our services</li>
+                  <li>To provide customer support</li>
+                  <li>To gather analysis or valuable information so that we can improve our services</li>
+                  <li>To monitor the usage of our services</li>
+                  <li>To detect, prevent, and address technical issues</li>
+                </ul>
+            
+                <h2>Security</h2>
+                <p>The security of your personal information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
+            
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                  <li>Email: example@example.com</li>
+                  <li>Phone: 123-456-7890</li>
+                  <li>Address: 123 Main Street, City, Country</li>
+                </ul>
+              </div>
+        </main>
+        <!-- Main End -->
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 class="footer-heading">Menu Links</h5>
+                        <ul class="list-unstyled nav-links">
+                            <li><i class="fas fa-angle-right"></i> <a href="index.html" class="footer-link">Home</a>
+                            </li>
+                            <li><i class="fas fa-angle-right"></i> <a href="contacts.html"
+                                    class="footer-link">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer-heading">Order Wizard</h5>
+                        <ul class="list-unstyled nav-links">
+                            <li><i class="fas fa-angle-right"></i> <a href="cost.html" class="footer-link">Cost
+                                    Estimator</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="PrivacyPolicy.html"
+                                    class="footer-link">Privacy Policy</a></li>
+                            <li><i class="fas fa-angle-right"></i> <a href="Term&Conditions.html"
+                                    class="footer-link">Term & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="footer-heading">Contacts</h5>
+                        <ul class="list-unstyled contact-links">
+                            <li><i class="icon icon-map-marker"></i><a href="https://goo.gl/maps/vKgGyZe2JSRLDnYH6"
+                                    class="footer-link" target="_blank">HSR Layout, Banglore, Karnataka</a>
+                            </li>
+                            <li><i class="icon icon-envelope3"></i><a href="mailto:info@yourdomain.com"
+                                    class="footer-link">Mail: info@yourdomain.com</a></li>
+                            <li><i class="icon icon-phone2"></i><a href="tel:+3630123456789"
+                                    class="footer-link">+91-9115879876</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 class="footer-heading">Follow Us</h5>
+                        <ul class="list-unstyled social-links">
+                            <li><a href="https://facebook.com/" class="social-link" target="_blank"><i
+                                        class="icon icon-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/" class="social-link" target="_blank"><i
+                                        class="icon icon-twitter"></i></a></li>
+                            <li><a href="https://instagram.com/" class="social-link" target="_blank"><i
+                                        class="icon icon-instagram"></i></a></li>
+                            <li><a href="https://pinterest.com/" class="social-link" target="_blank"><i
+                                        class="icon icon-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-8">
+                        <ul id="subFooterLinks">
+                            <li><a href="#" target="_blank">With <i class="fa fa-heart pulse"></i> by Movidu</a></li>
+                            <li><a href="Term&Conditions.html" target="_blank">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="copy">© 2024 Costy</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+    <!-- Page End -->
+
+
+
+
+
+    <!-- Back to top button -->
+    <div id="toTop"><i class="fa fa-chevron-up"></i></div>
+
+
+
+    <!-- Vendor Javascript Files -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/easing/js/easing.min.js"></script>
+    <script src="vendor/parsley/js/parsley.min.js"></script>
+    <script src="vendor/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendor/range-slider/js/ion.rangeSlider.min.js"></script>
+    <script src="vendor/price-format/js/jquery.priceformat.min.js"></script>
+    <script src="vendor/theia-sticky-sidebar/js/ResizeSensor.min.js"></script>
+    <script src="vendor/theia-sticky-sidebar/js/theia-sticky-sidebar.min.js"></script>
+    <script src="vendor/mmenu/js/mmenu.min.js"></script>
+    <script src="vendor/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/float-labels/js/float-labels.min.js"></script>
+
+    <!-- Main Javascript File -->
+    <script src="js/scripts.js"></script>
+
+</body>
+
+
+</html>
