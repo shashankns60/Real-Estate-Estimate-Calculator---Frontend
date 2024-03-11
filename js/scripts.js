@@ -202,11 +202,15 @@
 
 		if (optionGroupListName == 'optionGroup1List') {
 			$('#optionGroup1 .price-list .list li').each(function () {
-				itemPrice = $(this).data('value');
-				if (itemPrice != 0) { $(this).append('<span class="price">' + itemPrice + '</span>'); }
-				formatItemPrice();
+				// Get the name of the item
+				itemName = $(this).data('value');
+				// Append the name to the list item
+				$(this).append('<span class="name">' + itemName + '</span>');
+				// Apply any formatting if needed
+				formatItemName();
 			});
 		}
+		
 		if (optionGroupListName == 'optionGroup2List') {
 			$('#optionGroup2 .price-list .list li').each(function () {
 				itemPrice = $(this).data('value');
