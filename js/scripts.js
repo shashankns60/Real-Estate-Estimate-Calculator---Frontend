@@ -804,34 +804,7 @@
 		});
 	}
 
-	// =====================================================
-	//      COLOR SWITCHER
-	// =====================================================
+	
 
-	var demo = '<style>.color-change{top: 20vh; right: -50px; padding: 5px 5px 0; background-color: #000; position: fixed; z-index: 99999999999999999999999999999999; border-radius: 0 0 2px 0; -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out;}.active-changer{right: 0;}.swapColor{height: 40px; width: 40px; display: block; margin-bottom: 5px; border-radius: 1px; filter: brightness(100%); -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out;}.swapColor:hover{filter: brightness(110%);}.swapOverlay{height: 40px; width: 40px; display: block; margin-bottom: 10px; border-radius: 1px;}.green{background-color: #02b843;}.coral{background-color: #ff7b79;}.blue{background-color: #64b5f6;}.aqua{background-color: #1cbbb4;}.open-changer{cursor: pointer; position: absolute; background-color: #000; height: 40px; width: 40px; top: 0; left: -40px; color: #fff; display: flex; justify-content: center;}.open-changer i{align-self: center; animation: rotate 2s infinite linear;}@keyframes rotate{0%{transform: rotate(0);}100%{transform: rotate(360deg);}}.demo-card{width: 100%;}.demo-frame{margin: 0;}@media (max-width: 768px){.demo-frame{margin-left: -15px; margin-right: -15px;}}</style> <div class="color-change"> <div class="open-changer"><i class="fas fa-cog"></i></div><a href="javascript:void(0)" class="swapColor aqua" data-theme="aqua"></a> <a href="javascript:void(0)" class="swapColor coral" data-theme="coral"></a> <a href="javascript:void(0)" class="swapColor green" data-theme="green"></a> <a href="javascript:void(0)" class="swapColor blue" data-theme="blue"></a></div>';
-
-	$('body').prepend(demo);
-
-	var sheets = {
-		aqua: $('<link rel="stylesheet" href="css/style-aqua.css">'),
-		coral: $('<link rel="stylesheet" href="css/style.css">'),
-		green: $('<link rel="stylesheet" href="css/style-green.css">'),
-		blue: $('<link rel="stylesheet" href="css/style-blue.css">'),
-	};	
-
-	var currentSheet = sheets.coral.appendTo($('head'));
-
-	$('a.swapColor').click(function () {
-		currentSheet.detach();
-		currentSheet = (sheets[$(this).attr('data-theme')]).appendTo($('head'));
-	});
-
-	$('.open-changer').click(function () {
-		$('.color-change').toggleClass('active-changer');
-	});
-
-	$('.art-app').click(function () {
-		$('.color-change').removeClass('active-changer');
-	});
 
 })(window.jQuery);
